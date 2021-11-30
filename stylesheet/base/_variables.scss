@@ -1,0 +1,32 @@
+// == Breakpoints ===
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  wide: 960px,
+  large: 1024px,
+  largest: 1280px,
+  super-largest: 1441px
+);
+
+$color-primary: #E61E56;
+$color-orange: #a17143;
+$color-grey: #f3f3f3;
+
+$color: (
+  primary:  #E61E56,
+  orange-a: #a17143,
+  grey-a: #f3f3f3
+);
+
+$font-size: (
+  xs:     11px,
+  sm:     13px,
+  normal: 16px,
+  lg:     18px,
+  xl:     20px,
+  xxl:    24px,
+  xxxl:   30px
+);
+
+$font-body: "inter", san-serif;
+$font-japan: serif;
