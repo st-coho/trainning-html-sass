@@ -15,20 +15,20 @@
   .form-control {
     border-radius: 3px;
     width: 40%;
-    padding: 3px;
-    margin-left: 18px;
+    @include pxRem(padding, 3);
+    @include pxRem(margin-left, 18);
 
     &:focus {
       outline: none;
     }
   }
   .btn {
-    padding-left: 5px;
+    @include pxRem(padding-left, 5);
   }
 
   .fa-search {
     color: white;
-    font-size: 12px;
+    @include pxRem(font-size, 12);
   }
 }
 

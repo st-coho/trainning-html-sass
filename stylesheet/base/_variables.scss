@@ -1,32 +1,42 @@
+$font-family-default: 'Catamaran', sans-serif;
+$font-family-secondary: 'Montserrat', sans-serif;
+
 // == Breakpoints ===
 $breakpoints: (
   small: 480px,
   medium: 768px,
   wide: 960px,
   large: 1024px,
-  largest: 1280px,
-  super-largest: 1441px
+  largest: 1280px
 );
-
-$color-primary: #E61E56;
-$color-orange: #a17143;
-$color-grey: #f3f3f3;
-
 $color: (
-  primary:  #E61E56,
-  orange-a: #a17143,
-  grey-a: #f3f3f3
+  primary: #f3f3f3,
+  secondary: #554E8F,
+  border: #ebebeb,
+  white: #ffffff,
+  black: #080808,
+  yellow: #fdd835,
+  red: #cf2929,
+  green: #4fb68d,
+  grey-a: #d0d0d0,
+  content-text: #999999,
+  gray-text: #929292,
+  bg-gray: #f7f7f7
 );
-
 $font-size: (
-  xs:     11px,
-  sm:     13px,
-  normal: 16px,
-  lg:     18px,
-  xl:     20px,
-  xxl:    24px,
-  xxxl:   30px
+  sm: 12,
+  md: 14,
+  lg: 16,
+  xl: 30
 );
-
-$font-body: "inter", san-serif;
-$font-japan: serif;
+$font-icon: (
+  icon-add: "\e900",
+  icon-all: "\e901",
+  icon-planning: "\e902",
+  icon-completed: "\e903",
+  icon-remove: "\e904",
+  icon-list: "\e905",
+  icon-alls: "\e906",
+  icon-close: "\e907",
+  icon-trash: "\e908",
+)
