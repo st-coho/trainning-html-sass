@@ -1,121 +1,351 @@
-// Mixins for build grid
-$grid-columns: 12;
-@mixin build-grid($size) {
-  @for $i from 1 through $grid-columns {
-    @if $size != '' {
-      .col-#{$size}-#{$i} {
-        width: percentage($i / $grid-columns);
-      }
-    } @else {
-      .col-#{$i} {
-        width: percentage($i / $grid-columns);
-      }
-    }
-  }
-}
-// End mixins for build grid
-$grid-gutter: 15px;
-$container-width: 1180px;
-$container-padding: 85px;
+// // Mixins for build grid
+// $grid-columns: 12;
+// @mixin build-grid($size) {
+//   @for $i from 1 through $grid-columns {
+//     @if $size != '' {
+//       .col-#{$size}-#{$i} {
+//         width: percentage($i / $grid-columns);
+//       }
+//     } @else {
+//       .col-#{$i} {
+//         width: percentage($i / $grid-columns);
+//       }
+//     }
+//   }
+// }
+// // End mixins for build grid
+// $grid-gutter: 15px;
+// $container-width: 1180px;
+// $container-padding: 85px;
+// .container {
+//   // @extend %clr;
+//   padding: 0 $container-padding;
+// }
+// .no-container {
+//   margin: 0 -20px;
+//   @include respond-below(medium) {
+//     margin: 0 -10px;
+//   }
+// }
+
+// .row {
+//   @extend %clr;
+//   margin-left: -$grid-gutter;
+//   margin-right: -$grid-gutter;
+//   > [class*="col-"] {
+//     float: left;
+//     padding-left: $grid-gutter;
+//     padding-right: $grid-gutter;
+//   }
+// }
+
+// // Remove gutters (margin, padding) of row & col
+// .row-no-gutters {
+//   margin-left: 0;
+//   margin-right: 0;
+//   > [class*="col-"] {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+// }
+
+// /* Grid for all screen
+//  * Ex: col-1, col-2 */
+// @include build-grid('');
+
+// /* Grid for screen min-width: $small
+//  * Ex: col-small-1, col-small-2 */
+// @include respond-above(small) {
+//   @include build-grid(small);
+// }
+
+// /* Grid for screen min-width: $medium
+//  * Ex: col-medium-1, col-medium-2 */
+// @include respond-above(medium) {
+//   @include build-grid(medium);
+// }
+
+// /* Grid for screen min-width: $large
+//  * Ex: col-large-1, col-large-2 */
+// @include respond-above(large) {
+//   @include build-grid(large);
+// }
+
+// /* Grid for screen min-width: $largest
+//  * Ex: col-largest-1, col-largest-2 */
+// @include respond-above(largest) {
+//   @include build-grid(largest);
+// }
+
+// // Flex grid build
+// .f-row {
+//   display: flex;
+//   flex-direction: row;
+//   &.f-space-between {
+//     justify-content: space-between;
+//   }
+//   &.f-space-evenly {
+//     justify-content: space-evenly;
+//   }
+//   &.f-col-1 {
+//     flex: 1;
+//   }
+//   &.f-center {
+//     align-items: center;
+//     justify-content: center;
+//   }
+//   &.f-center-x {
+//     justify-content: center;
+//   }
+//   &.f-center-y {
+//     align-items: center;
+//   }
+// }
+
+// .f-col {
+//   display: flex;
+//   flex-direction: column;
+//   &.f-col-1 {
+//     flex: 1;
+//   }
+//   &.f-center {
+//     align-items: center;
+//     justify-content: center;
+//   }
+//   &.f-center-x {
+//     justify-content: center;
+//   }
+//   &.f-center-y {
+//     align-items: center;
+//   }
+// }
+
+
 .container {
-  // @extend %clr;
-  padding: 0 $container-padding;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1192px;
+	position: relative;
 }
 .no-container {
-  margin: 0 -20px;
-  @include respond-below(medium) {
-    margin: 0 -10px;
-  }
+	margin: 0 -20px;
 }
-
 .row {
-  @extend %clr;
-  margin-left: -$grid-gutter;
-  margin-right: -$grid-gutter;
-  > [class*="col-"] {
-    float: left;
-    padding-left: $grid-gutter;
-    padding-right: $grid-gutter;
-  }
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -20px;
+	margin-right: -20px;
+	>[class*=col-] {
+		flex: 0 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 20px;
+	}
 }
-
-// Remove gutters (margin, padding) of row & col
 .row-no-gutters {
-  margin-left: 0;
-  margin-right: 0;
-  > [class*="col-"] {
-    padding-left: 0;
-    padding-right: 0;
-  }
+	margin-left: 0;
+	margin-right: 0;
+	>[class*=col-] {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
-
-/* Grid for all screen
- * Ex: col-1, col-2 */
-@include build-grid('');
-
-/* Grid for screen min-width: $small
- * Ex: col-small-1, col-small-2 */
-@include respond-above(small) {
-  @include build-grid(small);
+.col-1 {
+	width: 8.3333333333%;
 }
-
-/* Grid for screen min-width: $medium
- * Ex: col-medium-1, col-medium-2 */
-@include respond-above(medium) {
-  @include build-grid(medium);
+.col-2 {
+	width: 16.6666666667%;
 }
-
-/* Grid for screen min-width: $large
- * Ex: col-large-1, col-large-2 */
-@include respond-above(large) {
-  @include build-grid(large);
+.col-3 {
+	width: 25%;
 }
-
-/* Grid for screen min-width: $largest
- * Ex: col-largest-1, col-largest-2 */
-@include respond-above(largest) {
-  @include build-grid(largest);
+.col-4 {
+	width: 33.3333333333%;
 }
-
-// Flex grid build
-.f-row {
-  display: flex;
-  flex-direction: row;
-  &.f-space-between {
-    justify-content: space-between;
-  }
-  &.f-space-evenly {
-    justify-content: space-evenly;
-  }
-  &.f-col-1 {
-    flex: 1;
-  }
-  &.f-center {
-    align-items: center;
-    justify-content: center;
-  }
-  &.f-center-x {
-    justify-content: center;
-  }
-  &.f-center-y {
-    align-items: center;
-  }
+.col-5 {
+	width: 41.6666666667%;
 }
-
-.f-col {
-  display: flex;
-  flex-direction: column;
-  &.f-col-1 {
-    flex: 1;
-  }
-  &.f-center {
-    align-items: center;
-    justify-content: center;
-  }
-  &.f-center-x {
-    justify-content: center;
-  }
-  &.f-center-y {
-    align-items: center;
-  }
+.col-6 {
+	flex: 0 0 auto;
+	width: 50%;
+}
+.col-7 {
+	width: 58.3333333333%;
+}
+.col-8 {
+	width: 66.6666666667%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.3333333333%;
+}
+.col-11 {
+	width: 91.6666666667%;
+}
+.col-12 {
+	width: 100%;
+}
+@media (max-width: 767px) {
+	.container {
+		padding: 0 20px;
+	}
+	.no-container {
+		margin: 0 -10px;
+	}
+}
+@media (max-width: 480px) {
+	.col-small-1 {
+		width: 8.3333333333%;
+	}
+	.col-small-2 {
+		width: 16.6666666667%;
+	}
+	.col-small-3 {
+		width: 25%;
+	}
+	.col-small-4 {
+		width: 33.3333333333%;
+	}
+	.col-small-5 {
+		width: 41.6666666667%;
+	}
+	.col-small-6 {
+		width: 50%;
+	}
+	.col-small-7 {
+		width: 58.3333333333%;
+	}
+	.col-small-8 {
+		width: 66.6666666667%;
+	}
+	.col-small-9 {
+		width: 75%;
+	}
+	.col-small-10 {
+		width: 83.3333333333%;
+	}
+	.col-small-11 {
+		width: 91.6666666667%;
+	}
+	.col-small-12 {
+		width: 100%;
+	}
+}
+@media (max-width: 768px) {
+	.col-medium-1 {
+		width: 8.3333333333%;
+	}
+	.col-medium-2 {
+		width: 16.6666666667%;
+	}
+	.col-medium-3 {
+		width: 25%;
+	}
+	.col-medium-4 {
+		width: 33.3333333333%;
+	}
+	.col-medium-5 {
+		width: 41.6666666667%;
+	}
+	.col-medium-6 {
+		width: 50%;
+	}
+	.col-medium-7 {
+		width: 58.3333333333%;
+	}
+	.col-medium-8 {
+		width: 66.6666666667%;
+	}
+	.col-medium-9 {
+		width: 75%;
+	}
+	.col-medium-10 {
+		width: 83.3333333333%;
+	}
+	.col-medium-11 {
+		width: 91.6666666667%;
+	}
+	.col-medium-12 {
+		width: 100%;
+	}
+}
+@media (max-width: 1024px) {
+	.col-large-1 {
+		width: 8.3333333333%;
+	}
+	.col-large-2 {
+		width: 16.6666666667%;
+	}
+	.col-large-3 {
+		width: 25%;
+	}
+	.col-large-4 {
+		width: 33.3333333333%;
+	}
+	.col-large-5 {
+		width: 41.6666666667%;
+	}
+	.col-large-6 {
+		width: 50%;
+	}
+	.col-large-7 {
+		width: 58.3333333333%;
+	}
+	.col-large-8 {
+		width: 66.6666666667%;
+	}
+	.col-large-9 {
+		width: 75%;
+	}
+	.col-large-10 {
+		width: 83.3333333333%;
+	}
+	.col-large-11 {
+		width: 91.6666666667%;
+	}
+	.col-large-12 {
+		width: 100%;
+	}
+}
+@media (max-width: 1280px) {
+	.col-largest-1 {
+		width: 8.3333333333%;
+	}
+	.col-largest-2 {
+		width: 16.6666666667%;
+	}
+	.col-largest-3 {
+		width: 25%;
+	}
+	.col-largest-4 {
+		width: 33.3333333333%;
+	}
+	.col-largest-5 {
+		width: 41.6666666667%;
+	}
+	.col-largest-6 {
+		width: 50%;
+	}
+	.col-largest-7 {
+		width: 58.3333333333%;
+	}
+	.col-largest-8 {
+		width: 66.6666666667%;
+	}
+	.col-largest-9 {
+		width: 75%;
+	}
+	.col-largest-10 {
+		width: 83.3333333333%;
+	}
+	.col-largest-11 {
+		width: 91.6666666667%;
+	}
+	.col-largest-12 {
+		width: 100%;
+	}
 }

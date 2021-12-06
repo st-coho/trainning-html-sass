@@ -6,7 +6,6 @@
 }
 html, body {
   @include pxRem(font-size, 16);
-  font-family: $font-body;
   position: relative;
   font-weight: 300;
   color: map-get($color, black);
