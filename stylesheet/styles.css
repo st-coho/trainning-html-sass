@@ -1688,4 +1688,95 @@ nav .header-icon > ul li > i {
   color: #333333;
 }
 
+.section-benefit {
+  margin-top: 50px;
+  background: #F7F7F7;
+  padding-bottom: 54px;
+}
+.section-benefit .section-title {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #333333;
+  padding: 48px 0 30px 0;
+}
+.section-benefit ul li i {
+  font-size: 36px;
+}
+.section-benefit .section-sub-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  padding: 46px 0 16px 0;
+}
+.section-benefit .section-desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #808080;
+}
+
+.section-product {
+  margin-top: 48px;
+}
+.section-product ul li {
+  position: relative;
+}
+.section-product ul li .section-discount {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  background: #FF0000;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  border: none;
+  padding: 6px 10px;
+}
+.section-product ul li .section-name-product {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+.section-product ul li .section-money {
+  display: flex;
+  justify-content: space-between;
+}
+.section-product ul li .section-money .section-price {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FF0000;
+}
+.section-product ul li .section-money .section-no-discount {
+  font-size: 20px;
+  line-height: 30px;
+  color: #CECECE;
+}
+.section-product .section-title {
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 48px;
+  color: #333333;
+}
+.section-product .selected-top {
+  display: flex;
+  justify-content: space-between;
+}
+.section-product .selected-top .section-action {
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 39px;
+  padding: 14px 30px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  color: #333333;
+}
+
 /*# sourceMappingURL=styles.css.map */
