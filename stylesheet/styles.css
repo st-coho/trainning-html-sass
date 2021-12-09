@@ -1628,4 +1628,64 @@ nav .header-icon > ul li > i {
   width: unset;
 }
 
+.section-selected {
+  margin-top: 110px;
+}
+.section-selected ul li {
+  position: relative;
+}
+.section-selected ul li .section-discount {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  background: #FF0000;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  border: none;
+  padding: 6px 10px;
+}
+.section-selected ul li .section-name-product {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+.section-selected ul li .section-money {
+  display: flex;
+  justify-content: space-between;
+}
+.section-selected ul li .section-money .section-price {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FF0000;
+}
+.section-selected ul li .section-money .section-no-discount {
+  font-size: 20px;
+  line-height: 30px;
+  color: #CECECE;
+}
+.section-selected .section-title {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 48px;
+  color: #333333;
+}
+.section-selected .selected-top {
+  display: flex;
+  justify-content: space-between;
+}
+.section-selected .selected-top .section-action {
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 39px;
+  padding: 14px 30px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  color: #333333;
+}
+
 /*# sourceMappingURL=styles.css.map */
