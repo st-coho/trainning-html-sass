@@ -1779,4 +1779,47 @@ nav .header-icon > ul li > i {
   color: #333333;
 }
 
+footer .footer-bottom {
+  background: #FBB03B;
+}
+footer .footer-bottom > p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 24px 0;
+}
+footer .footer-top {
+  background: #FBB03B;
+  border-bottom: 1px solid white;
+}
+footer .footer-top .footer-left-desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  max-width: 64%;
+}
+footer .footer-top .list-social {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  max-width: 40%;
+  padding: 56px 0 60px 0;
+}
+footer .footer-top .list-social > li > i {
+  color: white;
+}
+footer .footer-top ul > li > ul > li > p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+footer .footer-top ul > li > ul > li > a {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
