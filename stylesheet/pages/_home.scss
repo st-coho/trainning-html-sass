@@ -295,6 +295,7 @@ nav {
     left: 10%;
     background: #FF0000;
     border-radius: 20px;
+
     font-weight: bold;
     font-size: 12px;
     line-height: 18px;
@@ -404,7 +405,6 @@ nav {
 }
 
 footer {
-
   & .footer-top  {
     & .footer-left-desc {
       & > img {
@@ -416,6 +416,7 @@ footer {
 
   & .footer-bottom {
     background: #FBB03B;
+
     & > p {
       font-size: 12px;
       line-height: 18px;
@@ -434,7 +435,6 @@ footer {
       line-height: 21px;
       color: #FFFFFF;
       max-width: 64%;
-
       & > p {
         padding-top: 24px;
       }
@@ -479,13 +479,11 @@ footer {
   img {
     width: 100%;
   }
-
   .section-collection ul li > img {
     max-width: 100%;
     width: 100%;
     height: 100%;
   }
-
   .section-sub-banner .sub-banner {
     padding-left: 4%;
   }
@@ -505,7 +503,6 @@ footer {
 @media screen and (max-width: 480px) {
   .header {
     background-image: url('../../images/banner-mobile-bg.svg');
-
     & .banner-title {
       padding-top: 76%;
       font-size: 48px;
@@ -515,7 +512,6 @@ footer {
 
     & .banner-link {
       padding-top: 16px;
-
       & > a {
         font-weight: bold;
         font-size: 14px;
@@ -523,7 +519,7 @@ footer {
         text-decoration-line: underline;
         color: #FFFFFF;
       }
-  
+
       & i {
         color: #FBB03B;
         font-size: 20px;
@@ -610,7 +606,6 @@ footer {
 
   .section-subscribe {
     background-image: url('../../images/subscrible-mobile-bg.svg');
-
     & .section-title-small > p {
       font-size: 14px;
       line-height: 21px;
@@ -644,11 +639,9 @@ footer {
     }
   }
 
-
   img {
     width: 100%;
   }
-
   .section-collection {
     & ul > li > img {
       width: 100%;
@@ -660,14 +653,13 @@ footer {
       padding: 0 0 0 50px;
       max-width: 78%;
       padding-left: 50px;
-
+      
       & .section-desc {
         font-size: 10px;
         line-height: 15px;
         color: #808080;
       }
     }
-
     & ul li {
       display: flex;
     }
@@ -679,19 +671,14 @@ footer {
         display: none;
       }
     }
-
     & .footer-top {
       .footer-left-desc {
         max-width: 80%;
       }
     }
-
     & .footer-top .container > div > div > ul {
       padding-bottom: 48px;
     }
-
-
-
   }
 }
 
