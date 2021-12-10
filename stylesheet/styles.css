@@ -2049,10 +2049,27 @@ footer .footer-top ul > li > ul > li > a {
   .section-benefit ul li {
     display: flex;
   }
+
+  footer .footer-top .list-social {
+    display: none;
+  }
+  footer .footer-top .footer-left-desc {
+    max-width: 80%;
+  }
+  footer .footer-top .container > div > div > ul {
+    padding-bottom: 48px;
+  }
 }
 @media screen and (max-width: 375px) {
   .section-subscribe .section-title-small > p {
     max-width: 52%;
+  }
+
+  footer .footer-top .footer-left-desc {
+    max-width: 84%;
+  }
+  footer .footer-top .phone-text {
+    width: 200px;
   }
 }
 @media screen and (max-width: 320px) {

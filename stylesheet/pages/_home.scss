@@ -673,12 +673,42 @@ footer {
     }
   }
 
+  footer {
+    & .footer-top {
+      .list-social {
+        display: none;
+      }
+    }
+
+    & .footer-top {
+      .footer-left-desc {
+        max-width: 80%;
+      }
+    }
+
+    & .footer-top .container > div > div > ul {
+      padding-bottom: 48px;
+    }
+
+
+
+  }
 }
 
 @media screen and (max-width: 375px) {
   .section-subscribe {
     & .section-title-small > p {
       max-width: 52%;
+    }
+  }
+  footer {
+    & .footer-top {
+      .footer-left-desc {
+        max-width: 84%;
+      }
+      .phone-text {
+        width: 200px;
+      }
     }
   }
 }
