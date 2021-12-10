@@ -558,15 +558,92 @@ footer {
       text-align: center;
       top: 84%;
     }
-
-    // .section-collection ul li:first-child .section-title-small
   }
 
+  .section-product,
+  .section-selected {
+    & .section-title {
+      font-size: 18px;
+      line-height: 27px;
+    }
 
+    & .selected-top {
+      & .section-action {
+        background: none;
+        border: none;
+        font-weight: bold;
+        padding: 0;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+        color: #333333;
+      }
+    }
+
+    & ul li .section-discount {
+      left: 14%;
+      font-size: 8px;
+      line-height: 12px;
+      padding: 2px 8px;
+    }
+
+    & ul li .section-name-product {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    & ul li .section-money {
+      & .section-price {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    & ul li .section-money {
+      & .section-no-discount {
+        font-size: 12px;
+        line-height: 18px;
+        color: #CECECE;
+      }
+    }
+  }
 
   .section-subscribe {
     background-image: url('../../images/subscrible-mobile-bg.svg');
+
+    & .section-title-small > p {
+      font-size: 14px;
+      line-height: 21px;
+      color: red;
+      max-width: 60%;
+    }
+
+    & .section-title-small {
+      margin-top: -66px;
+    }
+
+    & form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    & form > input {
+      margin-left: 0;
+      width: 100%;
+      height: 32px;
+      width: 86%;
+      margin-bottom: 16px;
+    }
+
+    & form > .btn-submit {
+      width: 120px;
+      height: 32px;
+      padding: 0;
+      margin-left: 0;
+    }
   }
+
 
   img {
     width: 100%;
@@ -598,11 +675,46 @@ footer {
 
 }
 
+@media screen and (max-width: 375px) {
+  .section-subscribe {
+    & .section-title-small > p {
+      max-width: 52%;
+    }
+  }
+}
+
 @media screen and (max-width: 320px) {
   .section-benefit {
     & .benefit-infor {
       padding: 0px 0 0 30px;
       max-width: 100%;
+    }
+  }
+
+  .section-product,
+  .section-selected {
+    & ul li .section-name-product {
+      font-size: 10px;
+    }
+  }
+
+  .section-benefit {
+    & .section-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .section-subscribe {
+    & .section-title-small > p {
+      max-width: 80%;
+    }
+  }
+
+  footer {
+    & .footer-bottom > p {
+      font-size: 10px;
+      line-height: 14px;
     }
   }
 }
