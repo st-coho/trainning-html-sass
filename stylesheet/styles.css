@@ -101,6 +101,8 @@ input::-webkit-inner-spin-button {
 }
 
 .quantity {
+  font-size: 16px;
+  font-size: 1rem;
   display: inline-block;
   width: auto;
   border: solid 1px #ebebeb;

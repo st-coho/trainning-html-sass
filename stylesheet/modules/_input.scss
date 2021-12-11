@@ -5,7 +5,7 @@ input::-webkit-inner-spin-button {
 }
 
 .quantity {
-  // @include pxRem(font-size, map-get($font-size,lg));
+  @include pxRem(font-size, map-get($font-size,lg));
   display: inline-block;
   width: auto;
   border: solid 1px map-get($color, border);
