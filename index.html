@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./stylesheet/styles.scss">
   <link rel="stylesheet" href="./stylesheet/styles.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -13,7 +11,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Trainning HTML SASS</title>
 </head>
-
 <body>
   <header class="header">
     <div class="container">
@@ -30,13 +27,11 @@
             <li><a href="">Kids</a></li>
           </ul>
         </nav>
-        <div class="header-icon">
-          <ul>
-            <li><i class="fa fa-search" aria-hidden="true"></i></li>
-            <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
-            <li><i class="fa fa-user" aria-hidden="true"></i></li>
-          </ul>
-        </div>
+        <ul class="header-icon">
+          <li><i class="fa fa-search" aria-hidden="true"></i></li>
+          <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+          <li><i class="fa fa-user" aria-hidden="true"></i></li>
+        </ul>
       </div>
       <nav class="menu-mobile">
         <ul>
@@ -52,14 +47,14 @@
           <li><i class="fa fa-bars" aria-hidden="true"></i></li>
         </ul>
       </nav>
-      <div class="banner">
-        <h1 class="banner-title">Sale of the <span>summer</span> collection</h1>
-          <a class="banner-link" href=""><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>SHOP NOW</a>
-      </div>
     </div>
   </header>
-  <section class="section section-sub-banner">
+  <section class="section section-banner">
     <div class="container">
+      <div class="banner">
+        <h1 class="banner-title">Sale of the <span>summer</span> collection</h1>
+        <a class="banner-link" href=""><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>SHOP NOW</a>
+      </div>
       <div class="sub-banner">
         <ul class="row">
           <li class="col-4">
@@ -98,19 +93,19 @@
       <ul class="row">
         <li class="col-6 col-small-12">
           <img src="./images/collection1.png" alt="product">
-          <a class="btn item-discount">-50%</a>
+          <span class="badge badge-discount">-50%</span>
           <p class="item-title">New arrivalsare now in!</p>
           <a class="btn item-action" href="">SHOW COLLECTION</a>
         </li>
         <li class="col-3 col-small-6">
           <img src="./images/collection2.png" alt="product">
-          <a class="btn item-discount">-50%</a>
+          <span class="badge badge-discount">-50%</span>
           <p class="item-title">Basic t-shirts $29,99</p>
           <a class="btn item-action" href="">MORE DETAILS</a>
         </li>
         <li class="col-3 col-small-6">
           <img src="./images/collection3.png" alt="product">
-          <a class="btn item-discount">-50%</a>
+          <span class="badge badge-discount">-50%</span>
           <p class="item-title">Sale this summer</p>
           <a class="btn item-action" hreflang="">VIEW ALL</a>
         </li>
@@ -127,44 +122,44 @@
         <li class="col-3 col-small-6">
           <a href="">
             <img src="./images/product1.png" alt="product">
-            <a class="btn item-discount">-30%</a>
+            <span class="badge badge-discount">-30%</span>
             <p class="item-name">T-Shirt Summer Vibes</p>
             <div class="item-cost">
-              <p class="item-price">$89.99</p>
-              <p class="item-no-discount">$119.99</p>
+              <span class="item-price">$89.99</span>
+              <span class="item-no-discount">$119.99</span>
             </div>
           </a>
         </li>
         <li class="col-3 col-small-6">
           <a href="">
             <img src="./images/product2.png" alt="product">
-            <a class="btn item-discount">-30%</a>
+            <span class="badge badge-discount">-30%</span>
             <p class="item-name">Loose Knit 3/4 Sleeve</p>
             <div class="item-cost">
-              <p class="item-price">$119.99</p>
-              <p class="item-no-discount">0</p>
+              <span class="item-price">$119.99</span>
+              <span class="item-no-discount">0</span>
             </div>
           </a>
         </li>
         <li class="col-3 col-small-6">
           <a href="">
             <img src="./images/product3.png" alt="product">
-            <a class="btn item-discount">-30%</a>
+            <span class="badge badge-discount">-30%</span>
             <p class="item-name">Basic Slim Fit T-Shirt</p>
             <div class="item-cost">
-              <p class="item-price">$79.99</p>
-              <p class="item-no-discount">0</p>
+              <span class="item-price">$79.99</span>
+              <span class="item-no-discount">0</span>
             </div>
           </a>
         </li>
         <li class="col-3 col-small-6">
           <a href="">
             <img src="./images/product4.png" alt="product">
-            <a class="btn item-discount">-30%</a>
+            <span class="badge badge-discount">-30%</span>
             <p class="item-name">Loose Textured T-Shirt</p>
             <div class="item-cost">
-              <p class="item-price">$119.99</p>
-              <p class="item-no-discount">0</p>
+              <span class="item-price">$119.99</span>
+              <span class="item-no-discount">0</span>
             </div>
           </a>
         </li>
@@ -340,5 +335,4 @@
     </div>
   </footer>
 </body>
-
 </html>
