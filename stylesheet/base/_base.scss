@@ -5,6 +5,7 @@
   -webkit-overflow-scrolling: touch;
 }
 html, body {
+  @include pxRem(font-size, 16);
   position: relative;
   font-weight: 300;
   color: map-get($color, black);
